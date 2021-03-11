@@ -72,17 +72,17 @@ This option is very **dangerous** because it can delete your Web Server if it is
  3. Delete Virtual-Host
 	 - It is very simple here to delete a virtual host all you have to do is typing the `Server Name` and vola it is deleted if it is exists.
 	 - The response if it is successful will be as follows:
-	 ![enter image description here](./images/deleting-vritual-host.png)
+	 ![enter image description here](./images/deleting-virtual-host.png)
  4. Enable Virtual-Host
 	 - Unfortunately web server can't run on its own after installation, you must enable the virtual host by using this option and type the virtual host `Server Name` and leave the script prepare everything for you.
 	 - If everything goes alright you should receive the following response:
-	 ![enter image description here](./images/enabling-vritual-host.png)
+	 ![enter image description here](./images/enabling-virtual-host.png)
  ---Note don't forget about the toggle host, because hosts file will be affected in this part.
 	
  5. Disable Virtual-Host
 	- It is that simple as Enabling Virtual-Host, all you have to do is to type `Server Name` and vola, you deactivated the targeted virtual host with out losing any data, also you can enable it anytime.
 	- If it is successfully exists and disabled you will see this output:
-	![enter image description here](./images/disabling-vritual-host.png)
+	![enter image description here](./images/disabling-virtual-host.png)
 	---Note don't forget about the toggle host, because hosts file will be affected in this part.
  6. Back to Main Menu
 ___
@@ -109,6 +109,7 @@ Now its security time, Apache Admin deals with security you can authorize who ca
  6. Back to Main Menu
 ___
 **That's all for Apache Admin**
+
 ╔══╦╗──────╔╗─╔═╦╗────╔══╗───╔╦╦═╦╗
 ╚╗╔╣╚╦═╗╔═╦╣╠╗╚╗║╠═╦╦╗║═╦╩╦╦╗║║║═╬╬═╦╦═╗
 ─║║║║║╬╚╣║║║═╣╔╩╗║╬║║║║╔╣╬║╔╝║║╠═║║║║║╬║
