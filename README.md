@@ -105,7 +105,7 @@ Now its security time, Apache Admin deals with security you can authorize who ca
  5. Remove Authentication User
 	- Now if you no longer need user, just remove him from the server, and it is that simple, just provide us with Server Name, and username only, and leave the deleting on us.
 	- If removed successfully you will receive the following response
-		![enter image description here](./images/delete-athentication-user.png)
+		![enter image description here](./images/delete-authentication-user.png)
  6. Back to Main Menu
 ___
 **That's all for Apache Admin**
