@@ -1,0 +1,27 @@
+BEGIN {
+	IF=" "
+	
+}
+{
+	if( $1 == "ServerName") {
+		if( match(V_HOSTS_ENABLED, $2".conf")) {
+			print $2 " \033[32m(Enabled)\033[0m"
+			}
+		else
+			print $2 " \033[1;31m(Disabled)\033[0m"
+		print ""
+	}
+	if ($1) {
+		printf $1 ":";
+		$1="";
+		print $0;
+	}
+	else {
+		print ""
+	}
+		
+
+}
+END {
+	print "________________________________________________"
+}

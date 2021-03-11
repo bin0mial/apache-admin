@@ -34,13 +34,12 @@ function runMenu {
 				displayApacheInstallationOptions
 				;;
 			"2")
-				echo "Second Choice"
+				displayAdminVirtualhostsOptions
 				;;
 			"3")
-				echo "Third Choice"
+				displayAuthenticationOptions
 				;;
 			"4")
-				echo "Fourth Choice"
 				break
 				;;
 			*)
