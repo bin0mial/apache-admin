@@ -2,10 +2,11 @@
 function displayMainMenu {
 	printf "\n\n"
 	echo "=====Main Menu====="
-	echo "1. Install/Remove Apache Webserver"
-	echo "2. Administrate Virtualhost"
-	echo "3. Configure Authentiation"
-	echo "4. Quit"
+	echo "1. $(displayIsLocalhost)"
+	echo "2. Install/Remove Apache Webserver"
+	echo "3. Administrate Virtualhost"
+	echo "4. Configure Authentication"
+	echo "5. Quit"
 	printf "\n"
 }
 
@@ -18,7 +19,7 @@ function runMenu {
 	### Validate User is root
 	if (! isRoot )
 	then
-		displayFail "Please run script as a root"
+		displayFail "Please run script as a root" 
 		exit 1
 	fi
 	
@@ -29,17 +30,21 @@ function runMenu {
 		
 		read -p "Enter Your Choice: " CH
 		
+		clear
 		case ${CH} in
 			"1")
-				displayApacheInstallationOptions
+				LOCALHOST=$(test $LOCALHOST -eq 0 && echo 1 || echo 0)
 				;;
 			"2")
-				displayAdminVirtualhostsOptions
+				displayApacheInstallationOptions
 				;;
 			"3")
-				displayAuthenticationOptions
+				displayAdminVirtualhostsOptions
 				;;
 			"4")
+				displayAuthenticationOptions
+				;;
+			"5")
 				break
 				;;
 			*)

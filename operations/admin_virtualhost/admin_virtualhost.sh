@@ -28,7 +28,7 @@ function displayAdminVirtualhostsOptions {
 		displayAdminMenu
 		
 		read -p "Enter Your Choice: " CH
-		
+		clear
 		case ${CH} in
 			"1")
 				listAvailableVirtualHosts

@@ -78,3 +78,12 @@ function isEmpty {
 		return 1
 	fi
 }
+
+function isLocalhost {
+	if [[ $LOCALHOST -eq 0 ]]
+	then
+		return 0
+	else
+		return 1
+	fi
+}
